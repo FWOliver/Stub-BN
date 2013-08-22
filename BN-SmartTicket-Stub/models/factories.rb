@@ -68,4 +68,28 @@ FactoryGirl.define do
     sequence(:ticket_type_detail) {|n| TICKET_DETAILS[n % TICKET_DETAILS.length]}
     sequence(:is_valid) {|n| TICKET_VALIDITIES[n % TICKET_VALIDITIES.length]}
   end
+
+  NOW_CONTENTS = [ "Welcome to the homepage of this app. built to suit your taste! Guess what. We will have a festival. BLAH Blah Blah!  iouhmxelsaubvclnihuebhvc ailwmxebubvcrnuxms erzicflmhxmxljerlicg lmesrnclhbtuerlnu4398nlsc cseioruhrmofduh", "Another Text , comething like Welcome to the homepage of this app. built to suit your taste! Guess what. We will have a festival. BLAH Blah Blah!  iouhmxelsaubvclnihuebhvc ailwmxebubvcrnuxms erzicflmhxmxljerlicg lmesrnclhbtuerlnu4398nlsc cseioruhrmofduh"]
+  SOCIAL_MEDIA_USERS = [ "Matt", "Oliver", "David", "Stefano", "Eva"]
+  NOW_ITEM_TYPES = [ "tweet", "image", "text", "video_url link"]
+  NOW_IMAGE_URLS = [ "http://www.google.co.uk/url?sa=i&source=images&cd=&cad=rja&docid=eqfS80iU02cypM&tbnid=VTlVsC7C14T4zM:&ved=0CAUQjRw&url=http%3A%2F%2Fwww.dwihitparade.com%2F2011%2F04%2F13%2Fidaho-3%2F&ei=J_AUUoDUEMbM0QWG54CgDw&psig=AFQjCNHM-5GxHo35sLiVFjqWE7i4kyWCGw&ust=1377190237088727", "http://www.google.co.uk/url?sa=i&source=images&cd=&cad=rja&docid=eqfS80iU02cypM&tbnid=VTlVsC7C14T4zM:&ved=0CAUQjRw&url=http%3A%2F%2Fwww.dwihitparade.com%2F2011%2F04%2F13%2Fidaho-3%2F&ei=J_AUUoDUEMbM0QWG54CgDw&psig=AFQjCNHM-5GxHo35sLiVFjqWE7i4kyWCGw&ust=1377190237088727", "http://www.google.co.uk/url?sa=i&source=images&cd=&cad=rja&docid=eqfS80iU02cypM&tbnid=VTlVsC7C14T4zM:&ved=0CAUQjRw&url=http%3A%2F%2Fwww.bjhpn.com%2F&ei=FPAUUpGAHoOn0QXLuYDYAw&psig=AFQjCNHM-5GxHo35sLiVFjqWE7i4kyWCGw&ust=1377190237088727", "http://www.google.co.uk/url?sa=i&source=images&cd=&cad=rja&docid=eqfS80iU02cypM&tbnid=VTlVsC7C14T4zM:&ved=0CAUQjRw&url=http%3A%2F%2Fwww.dwihitparade.com%2F2011%2F04%2F13%2Fidaho-3%2F&ei=APAUUrL9A4qw0AX43YGQBQ&psig=AFQjCNHM-5GxHo35sLiVFjqWE7i4kyWCGw&ust=1377190237088727", "http://www.google.co.uk/url?sa=i&source=images&cd=&cad=rja&docid=eqfS80iU02cypM&tbnid=VTlVsC7C14T4zM:&ved=0CAgQjRwwAA&url=http%3A%2F%2Fthinkprogress.org%2Fjustice%2F2012%2F04%2F12%2F462977%2Fpennsylvania-voter-id-amish-voters%2F&ei=3O8UUqz6O8zA7Aa9g4GABw&psig=AFQjCNHM-5GxHo35sLiVFjqWE7i4kyWCGw&ust=1377190237088727" ]
+  NOW_URLS = [ "http://www.google.co.uk/url?sa=i&source=images&cd=&cad=rja&docid=yQUdQjsT-CoWfM&tbnid=chKUb4okn7Py6M:&ved=0CAgQjRwwAA&url=http%3A%2F%2Fwww.mypetphotogifts.co.uk%2Findex.php%3Froute%3Dproduct%2Fproduct%26product_id%3D60&ei=f_EUUpvUEPLW7QbTm4DICA&psig=AFQjCNFlfd_a13xTtxmYZv7aj3o8wR268g&ust=1377190655355300", "http://www.google.co.uk/url?sa=i&source=images&cd=&cad=rja&docid=sKn1YWlIGTU0tM&tbnid=oCgDuBBjTUT_tM:&ved=&url=http%3A%2F%2Fwww.happydogdays.co.uk%2Fhappy-dog-days-links-page-2&ei=cfEUUpzkOOSV7AbYxYHIBw&psig=AFQjCNGFzcXG73KF_HmK7lR4xIigaufH0g&ust=1377190642010268", "http://www.google.co.uk/url?sa=i&source=images&cd=&cad=rja&docid=hrnHkY2DdtW7fM&tbnid=s_YUZRKNxZtxhM:&ved=&url=http%3A%2F%2Fwww.southampton.ac.uk%2F~fangohr%2Fresearch%2Fvortex1%2Fmbg%2Fmbg2.html&ei=cPEUUunvHIOv7Abbh4DQBw&psig=AFQjCNGh-JS8RMtAQVmVW1mebGhjJhN3ww&ust=1377190640587933", "http://www.google.co.uk/url?sa=i&source=images&cd=&cad=rja&docid=jShiQbMvQ5ge3M&tbnid=BExogIuIvNVakM:&ved=&url=http%3A%2F%2Fwww.faithcomesbyhearing.com%2Ffeatures%2Flink-to-us&ei=b_EUUsj8Be2U7Qa5vYDABw&psig=AFQjCNGHHVmWhMoERy9rjqCowLlLs7e29A&ust=1377190639189524", "http://www.google.co.uk/url?sa=i&source=images&cd=&cad=rja&docid=WYDVo30umrtqtM&tbnid=tx_bmPAzP22i2M:&ved=&url=http%3A%2F%2Fparentview.ofsted.gov.uk%2Flink-to-us&ei=bfEUUtqVHYPX7Aa3xoCoCA&psig=AFQjCNGmctavDzNe15Sq8xPDRXa83YuQ3Q&ust=1377190637583846"]
+
+  factory :home do
+    sequence(:home_item_id) {|n| n }
+    sequence(:home_text_content)  {|n| NOW_CONTENTS[n % NOW_CONTENTS.length]}
+    sequence(:home_social_media_user) {|n| SOCIAL_MEDIA_USERS[n % SOCIAL_MEDIA_USERS.length]}
+    sequence(:home_item_type) {|n| NOW_ITEM_TYPES[n % NOW_ITEM_TYPES.length]}
+    sequence(:home_image_url) {|n| NOW_IMAGE_URLS[n % NOW_IMAGE_URLS.length]}
+    sequence(:home_url) {|n| NOW_URLS[n % NOW_URLS.length]}
+  end
+
+
+  HELP_TITLES = [ "How To Install", "How to Uninstall", "Forgot Password", "Lost/Stolen", "Hanged/Stopped" ]
+  HELP_CONTENTS = [ "Go to Applestore/Google play and search for this app. Install. Do not sign up but log in with your existing ID", "Uninstall, Simply hold the icon and delete or press X", "Call hotline 98234789-98238832", "Email us within 48 hours to sample@email.com", "Uninstall and install again. Please inform us via email or phone." ]
+
+  factory :help do 
+    sequence(:help_title) {|n| HELP_TITLES[n % HELP_TITLES.length]}
+    sequence(:help_content) {|n| HELP_CONTENTS[n % HELP_CONTENTS.length]}
+  end
 end

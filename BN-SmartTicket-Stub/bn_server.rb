@@ -4,6 +4,8 @@ require 'json'
 require './models/gig'
 require './models/ticket'
 require './models/user'
+require './models/home'
+require './models/help'
 require './models/factories'
 
 
@@ -68,6 +70,35 @@ get '/api/tickets/:user_id' do
       json.ticketType t.ticket_type
       json.ticketTypeDetail t.ticket_type_detail
       json.isValid t.is_valid
+  end
+end
+end
+
+
+get '/api/homes/:user_id' do
+  
+  m = FactoryGirl.build(:home)
+  
+  Jbuilder.encode do |json|
+    json.gig do
+      json.homeItemId m.home_item_id
+      json.homeTextContent m.home_text_content
+      json.homeSocialMediaUser m.home_social_media_user
+      json.homeItemType m.home_item_type
+      json.homeImageUrl m.home_image_url
+      json.homeUrl m.home_url
+  end
+end
+end
+
+get '/api/helps/:user_id' do
+  
+  h = FactoryGirl.build(:help)
+  
+  Jbuilder.encode do |json|
+    json.gig do
+      json.helpTitle h.help_title
+      json.helpContent h.help_content
   end
 end
 end
